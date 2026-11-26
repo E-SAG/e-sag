@@ -1,0 +1,115 @@
+{
+  "dataset_rows_clean": 724,
+  "train_rows": 579,
+  "test_rows": 145,
+  "features": [
+    "SFH",
+    "popUpWidnow",
+    "SSLfinal_State",
+    "Request_URL",
+    "URL_of_Anchor",
+    "web_traffic",
+    "URL_Length",
+    "age_of_domain",
+    "having_IP_Address"
+  ],
+  "classes": [
+    "-1",
+    "0",
+    "1"
+  ],
+  "models": {
+    "Naive Bayes": {
+      "accuracy": 0.7862,
+      "precision": 0.7907,
+      "recall": 0.7862,
+      "f1_score": 0.7751,
+      "confusion_matrix": [
+        [
+          57,
+          0,
+          14
+        ],
+        [
+          3,
+          3,
+          6
+        ],
+        [
+          7,
+          1,
+          54
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 0.8069,
+      "precision": 0.8081,
+      "recall": 0.8069,
+      "f1_score": 0.8054,
+      "confusion_matrix": [
+        [
+          57,
+          2,
+          12
+        ],
+        [
+          2,
+          7,
+          3
+        ],
+        [
+          9,
+          0,
+          53
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.8,
+      "precision": 0.8062,
+      "recall": 0.8,
+      "f1_score": 0.7951,
+      "confusion_matrix": [
+        [
+          57,
+          1,
+          13
+        ],
+        [
+          2,
+          5,
+          5
+        ],
+        [
+          8,
+          0,
+          54
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 0.7655,
+      "precision": 0.786,
+      "recall": 0.7655,
+      "f1_score": 0.7418,
+      "confusion_matrix": [
+        [
+          58,
+          0,
+          13
+        ],
+        [
+          4,
+          1,
+          7
+        ],
+        [
+          10,
+          0,
+          52
+        ]
+      ]
+    }
+  }
+}
