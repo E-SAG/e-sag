@@ -1,6 +1,6 @@
 # E-SAG Phishing Classification Module (`esag/ml`)
 
-Offline machine learning experiment and UI demonstration payload for **E-SAG (Endpoint Security & Access Guard)**, maintained by Member 5 (Ujjwal Babu Bomjan).
+Offline machine learning experiment and UI demonstration payload for **E-SAG (Endpoint Security & Access Guard)**.
 
 ## Dataset & Label Meanings
 
