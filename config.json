@@ -1,5 +1,7 @@
 {
-  "watched_folders": [],
+  "watched_folders": [
+    "/home/dixit/Documents/E-SAG"
+  ],
   "db_path": "database/file_events.db",
   "ml_model_path": "esag/ml/phishing_model.pkl",
   "refresh_interval_sec": 5,
