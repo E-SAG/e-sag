@@ -1,4 +1,6 @@
 {
+  "dataset_rows_raw": 1353,
+  "duplicates_removed": 629,
   "dataset_rows_clean": 724,
   "train_rows": 579,
   "test_rows": 145,
@@ -18,6 +20,17 @@
     "0",
     "1"
   ],
+  "label_meanings": {
+    "-1": "Phishing",
+    "0": "Suspicious",
+    "1": "Legitimate"
+  },
+  "class_distribution_clean": {
+    "-1": 353,
+    "0": 61,
+    "1": 310
+  },
+  "best_model": "Decision Tree",
   "models": {
     "Naive Bayes": {
       "accuracy": 0.7862,
@@ -111,5 +124,198 @@
         ]
       ]
     }
-  }
+  },
+  "sample_examples": [
+    {
+      "sample_id": 1,
+      "row_index": 818,
+      "features": {
+        "SFH": 1,
+        "popUpWidnow": 0,
+        "SSLfinal_State": 0,
+        "Request_URL": 1,
+        "URL_of_Anchor": 1,
+        "web_traffic": 0,
+        "URL_Length": 0,
+        "age_of_domain": 1,
+        "having_IP_Address": 0
+      },
+      "actual_label": "1",
+      "actual_label_name": "Legitimate",
+      "predicted_label": "-1",
+      "predicted_label_name": "Phishing",
+      "predictions_by_model": {
+        "Naive Bayes": {
+          "label": "-1",
+          "label_name": "Phishing"
+        },
+        "Decision Tree": {
+          "label": "-1",
+          "label_name": "Phishing"
+        },
+        "Random Forest": {
+          "label": "-1",
+          "label_name": "Phishing"
+        },
+        "Logistic Regression": {
+          "label": "-1",
+          "label_name": "Phishing"
+        }
+      }
+    },
+    {
+      "sample_id": 2,
+      "row_index": 1121,
+      "features": {
+        "SFH": 1,
+        "popUpWidnow": 1,
+        "SSLfinal_State": -1,
+        "Request_URL": -1,
+        "URL_of_Anchor": 1,
+        "web_traffic": -1,
+        "URL_Length": 0,
+        "age_of_domain": 1,
+        "having_IP_Address": 0
+      },
+      "actual_label": "-1",
+      "actual_label_name": "Phishing",
+      "predicted_label": "-1",
+      "predicted_label_name": "Phishing",
+      "predictions_by_model": {
+        "Naive Bayes": {
+          "label": "-1",
+          "label_name": "Phishing"
+        },
+        "Decision Tree": {
+          "label": "-1",
+          "label_name": "Phishing"
+        },
+        "Random Forest": {
+          "label": "-1",
+          "label_name": "Phishing"
+        },
+        "Logistic Regression": {
+          "label": "-1",
+          "label_name": "Phishing"
+        }
+      }
+    },
+    {
+      "sample_id": 3,
+      "row_index": 98,
+      "features": {
+        "SFH": -1,
+        "popUpWidnow": -1,
+        "SSLfinal_State": 1,
+        "Request_URL": -1,
+        "URL_of_Anchor": -1,
+        "web_traffic": 0,
+        "URL_Length": 1,
+        "age_of_domain": -1,
+        "having_IP_Address": 0
+      },
+      "actual_label": "0",
+      "actual_label_name": "Suspicious",
+      "predicted_label": "0",
+      "predicted_label_name": "Suspicious",
+      "predictions_by_model": {
+        "Naive Bayes": {
+          "label": "1",
+          "label_name": "Legitimate"
+        },
+        "Decision Tree": {
+          "label": "0",
+          "label_name": "Suspicious"
+        },
+        "Random Forest": {
+          "label": "1",
+          "label_name": "Legitimate"
+        },
+        "Logistic Regression": {
+          "label": "1",
+          "label_name": "Legitimate"
+        }
+      }
+    },
+    {
+      "sample_id": 4,
+      "row_index": 1333,
+      "features": {
+        "SFH": 0,
+        "popUpWidnow": 0,
+        "SSLfinal_State": -1,
+        "Request_URL": 0,
+        "URL_of_Anchor": 0,
+        "web_traffic": 1,
+        "URL_Length": 1,
+        "age_of_domain": -1,
+        "having_IP_Address": 0
+      },
+      "actual_label": "1",
+      "actual_label_name": "Legitimate",
+      "predicted_label": "1",
+      "predicted_label_name": "Legitimate",
+      "predictions_by_model": {
+        "Naive Bayes": {
+          "label": "1",
+          "label_name": "Legitimate"
+        },
+        "Decision Tree": {
+          "label": "1",
+          "label_name": "Legitimate"
+        },
+        "Random Forest": {
+          "label": "1",
+          "label_name": "Legitimate"
+        },
+        "Logistic Regression": {
+          "label": "1",
+          "label_name": "Legitimate"
+        }
+      }
+    },
+    {
+      "sample_id": 5,
+      "row_index": 264,
+      "features": {
+        "SFH": 0,
+        "popUpWidnow": 0,
+        "SSLfinal_State": -1,
+        "Request_URL": 0,
+        "URL_of_Anchor": 0,
+        "web_traffic": 0,
+        "URL_Length": 0,
+        "age_of_domain": -1,
+        "having_IP_Address": 0
+      },
+      "actual_label": "1",
+      "actual_label_name": "Legitimate",
+      "predicted_label": "1",
+      "predicted_label_name": "Legitimate",
+      "predictions_by_model": {
+        "Naive Bayes": {
+          "label": "1",
+          "label_name": "Legitimate"
+        },
+        "Decision Tree": {
+          "label": "1",
+          "label_name": "Legitimate"
+        },
+        "Random Forest": {
+          "label": "1",
+          "label_name": "Legitimate"
+        },
+        "Logistic Regression": {
+          "label": "1",
+          "label_name": "Legitimate"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Static historical features: trained on the UCI Website Phishing dataset (ID 379, 2014/2016 release) using 9 pre-extracted discrete indicators rather than live URL or HTML scraping.",
+    "Duplicate removal impact: 629 of 1,353 raw rows (~46.5%) were exact duplicates and removed, leaving 724 unique rows (579 train / 145 test).",
+    "Class 0 ('Suspicious') imbalance: only 61 unique rows (~8.4% of clean data, 12 rows in the 20% test split), reducing recall and precision on borderline cases.",
+    "Offline demonstration only: intended for the PySide6 UI 'View ML demonstration' tab, not real-time browser protection or live phishing blocking."
+  ]
 }
